@@ -1,10 +1,62 @@
-h1 {
-    color: gold;
+body {
+    
+    background-color: bisque;
+
+}
+
+.controller {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: 100vh;
+
 }
 
-p {
-    color:aqua;
+.left-circle, .inner-circle {
+    display: flex;
+    height: 25em;
+    width: 25em;
+    background-color: azure;
+    border-radius: 50%;
+
+
 }
+
+.inner-circle {
+    z-index: 10;
+    height: 18em;
+    width: 18em;
+    background-color:aliceblue;
+    margin-top: 3.5em;
+    margin-left: 3em;
+
+    
+}
+
+
+.center {
+    display: flex;
+    height: 20em;
+    width: 20em;
+    background: azure;
+    margin-left: -5em;
+    margin-right: -5em;
+    overflow: hidden;
+}
+
+.rigth-circle {
+    display: flex;
+    height: 25em;
+    width: 25em;
+    background-color: azure;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
