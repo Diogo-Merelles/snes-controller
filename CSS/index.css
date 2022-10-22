@@ -4,16 +4,24 @@ body {
 
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 4em;   
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .controller {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    height: 60vh;
 
 }
 
-.left-circle, .inner-circle {
+.left-circle, .inner-left-circle {
     display: flex;
     height: 25em;
     width: 25em;
@@ -24,7 +32,7 @@ body {
 
 }
 
-.inner-circle {
+.inner-left-circle {
     height: 18em;
     width: 18em;
     background-color:aliceblue;
@@ -48,26 +56,52 @@ body {
 
 .rectangle-1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     height: 4.5em;
     width: 14em;
-    background-color: black;
+    background-color: gray;
     margin-bottom: 1.2em;
     margin-left: 1.9em;
 
+
+
+}
+
+.left-arrow {
+
+    width: 0;
+	height: 0;
+	border-top: 1.5em solid transparent;
+	border-right: 3em solid #555;
+	border-bottom: 1.5em solid transparent;
+
+    opacity: 0.4;
+    margin-left: 0.7em;
+}
+
+.rigth-arrow {
+
+    width: 0;
+	height: 0;
+	border-top: 1.5em solid transparent;
+	border-left: 3em solid #555;
+	border-bottom: 1.5em solid transparent;
+
+    opacity: 0.4;
+    margin-right: 0.7em;
 }
 
 .rectangle-2 {
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    
 
     height: 14em;
     width: 4.5em;
-    background-color: black;
+    background-color: gray;
 
     margin-left: -9.25em;
     margin-bottom: 0.5em;
@@ -75,8 +109,8 @@ body {
 }
 
 .up-arrow {
-    /* width: 0;
-	height: 0; */
+    width: 0;
+	height: 0;
 	border-left: 1.5em solid transparent;
 	border-right: 1.5em solid transparent;
 	border-bottom: 3em solid #555;
@@ -85,20 +119,41 @@ body {
     opacity: 0.4;
 }
 
+.down-arrow {
+    width: 0;
+	height: 0;
+	border-left: 1.5em solid transparent;
+	border-right: 1.5em solid transparent;
+	border-top: 3em solid #555;
+
+    opacity: 0.4;
+    align-self: flex-end;
+    margin-bottom: 0.7em;
+
+    
+}
+
 .middle-circle {
 
     height: 2em;
     width: 2em;
     border-radius: 50%;
+    align-self: center;
      
     background-color: gray;
     opacity: 0.4;
 }
 
-
+/* Center of controller */
 
 .center {
     display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 4em;
+
+
     height: 20em;
     width: 20em;
     background: azure;
@@ -107,11 +162,44 @@ body {
     overflow: hidden;
 }
 
+.select-button, .start-button {
+    height: 4em;
+    width: 1em;
+    background-color: gray;
+    
+    z-index: 1;
+    margin-bottom: 6em;
+    border-radius: 15%;
+    
+
+    transform: rotate(45deg);
+}
+
+.start-button {
+    margin-right: 1.5em;
+}
+
+
+
+/* Rigth circle of controller */
+
 .rigth-circle {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 25em;
     width: 25em;
     background-color: azure;
+    border-radius: 50%;
+}
+
+.inner-rigth-circle {
+    height: 21.5em;
+    width: 21.5em;
+    background-color:gray;
+
+    z-index: 1;
     border-radius: 50%;
 }
 
