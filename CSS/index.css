@@ -179,7 +179,7 @@ body {
    font-weight: 600;
    color: #656565;
 
-   right: 44.5%;
+   right: 44%;
    top: 40%;
 }
 
@@ -311,7 +311,7 @@ body {
     width: 3.7em;
     background-color: red;
     border-radius: 50%;
-    margin-left: 0.3em;
+    margin-right: 0.3em;
 }
 
 /* Triggers */
